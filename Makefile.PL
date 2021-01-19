@@ -11,7 +11,13 @@ WriteMakefile(
     AUTHOR => 'Gisle Aas <gisle@activestate.com>',
     LICENSE => "perl",
     MIN_PERL_VERSION => 5.008001,
+    CONFIGURE_REQUIRES => {
+        'ExtUtils::Makemaker' => 6.56,
+    },
     PREREQ_PM => {
+        'HTTP::Headers' => 6,
+    },
+    BUILD_REQUIRES => {
         'HTTP::Headers' => 6,
     },
     META_MERGE => {
